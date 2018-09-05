@@ -1,0 +1,56 @@
+dbt;		//début
+sgo 57;		//sonorité à une fréquence de 220 Hz
+att 120;
+sar;
+dal 64;		//allumer DEL
+att 120;	//attendre 1 sec
+det 32;		//éteindre DEL
+att 40;		//attendre 1 sec
+mav 128;	//avancer à 50% de PWM
+att 40;		//attendre 1 sec	 
+mre 128;	//reculer à 50% de PWM (changement de vitesse)
+att 40;		//attendre 1 sec
+dbc 1;		//début boucle 2X
+	trd;		//tourner à droite
+	mav 80;	//avancer à 50% de PWM
+	att 40;		//attendre 1 sec
+	trg;		//tourner à gauche
+	mav 128;	//avancer à 50% de PWM	
+	att 40;		//attendre 500ms
+	trg;		//tourner à gauche	
+	mav 128;	//avancer à 50% de PWM	
+	att 40;		//attendre 500ms	
+	det 1;		//éteindre DEL
+	dal 1;		//allumer DEL
+fbc;
+fin;
+//att 20;		//attendre 500m/s
+//det 2;		//éteindre DEL
+//fbc;		//reboucler
+//mav 64;		//avancer à 25% de PWM
+//att 40;		//attendre 1 sec (avance pendant 1000ms)
+//mav 128;	//avancer à 50% de PWM (changement de vitesse)
+//att 40;		//attendre 1 sec (avance pendant 1000ms)			
+//trd;		//tourner à droite
+//mav 128;	//avancer à 50% de PWM
+//att 40;		//attendre 1 sec (avance pendant 1000ms)
+//trg;		//tourner à gauche
+//mav 128;	//avancer à 50% de PWM
+//att 40;		//attendre 1 sec (avance pendant 1000ms)
+//trg;		//tourner à gauche
+//mav 128;	//avancer à 50% de PWM
+//att 40;		//attendre 1 sec (avance pendant 1000ms)
+//trd;		//tourner à droite
+//mav 64;		//avancer à 25% de PWM (changement de vitesse)
+//att 20;		//attendre 500ms (avance pendant 500ms)
+//dbc 3;		//début boucle 4X
+///trg;		//tourner à gauche
+//fbc;		//reboucler
+//mre 128;	//reculer à 50% de PWM (changement de vitesse)
+//att 40;		//attendre 1 sec (recule pendant 1000ms)
+//mar;		//arrêter les moteurs
+//sgo 57;		//sonorité à une fréquence de 220 Hz
+//att 40;		//attendre 1 sec (fait du bruit pendant 1000ms)
+//sar;		//arrêter sonorité
+//fin;		//arrêter le programme
+

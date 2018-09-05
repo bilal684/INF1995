@@ -1,0 +1,128 @@
+dbt;	//Début du programme
+//Musique.
+//Morceau 1(x2)
+dbc 1;
+  sgo 67;
+  att 6;
+  sar;
+  att 1;
+  sgo 67;
+  att 6;
+  sar;
+  att 1;
+  sgo 67;
+  att 6;
+  sar;
+  att 1;
+  sgo 66;
+  att 20;
+  sgo 79;
+  att 6;
+  sar;
+  att 1;
+  sgo 79;
+  att 6;
+  sar;
+  att 1;
+  sgo 79;
+  att 6;
+  sar;
+  att 1;
+  sgo 78;
+  att 20;
+  sar;
+fbc;
+//Morceau 2(x2)
+dbc 1;
+  sgo 67;
+  att 6;
+  sar;
+  att 1;
+  sgo 67;
+  att 6;
+  sar;
+  att 1;
+  sgo 67;
+  att 6;
+  sar;
+  att 1;
+  sgo 66;
+  att 10;
+  sgo 79;
+  att 6;
+  sar;
+  att 1;
+  sgo 79;
+  att 6;
+  sar;
+  att 1;
+  sgo 79;
+  att 6;
+  sar;
+  att 1;
+  sgo 78;
+  att 10;
+  sar;
+fbc;
+//Morceau 3(x3)
+dbc 3;
+  sgo 67;
+  att 6;
+  sar;
+  att 1;
+  sgo 67;
+  att 6;
+  sar;
+  att 1;
+  sgo 67;
+  att 6;
+  sar;
+  att 1;
+  sgo 67;
+  att 8;
+  sar;
+  att 1;
+fbc;
+//Fin de la musique
+dal 1;	//Allumer la DEL
+mav 255;//Avancer à 100% de PWM
+att 40;	//Attendre 1s
+mar;	//Arrêter le moteur
+att 20;	//Attendre 500ms
+mre 255;//Reculer à 100% de PWM (changement de vitesse)
+att 40;	//Attendre 1s
+mar;	//Arrêter le moteur
+att 20;	//Attendre 500ms
+det 1;	//Éteindre la DEL
+trd;	//Tourner à gauche
+att 10;	//Attendre 250ms
+dbc 4 ;	//Début de boucle (5 itérations)
+	sgo 45;	//Générer un son de 110Hz
+	mav 255;//Avancer à 100% de PWM
+	att 40;	//Attendre 1s
+	mar;	//Arrêter le moteur
+	att 40;	//Attendre 1s
+	sar;	//Arrêter la sonorité
+	trg;	//Tourner à gauche
+	att 40;	//Attendre 1s
+fbc;//Fin de la boucle
+dal 1;	//Allumer la DEL
+att 40;	//Attendre 1s
+det 1;	//Éteindre la DEL
+
+dbc 3 ;	//Début de boucle (4 itérations)
+	dal 1;	//Allumer la DEL
+	trd;	//Tourner à droite
+	att 40;	//Attendre 1s
+	mar;	//Arrêter les moteurs
+	att 40;	//Attendre 1s
+	det 1;	//Éteindre la DEL
+fbc;//Fin de la boucle
+//4 bips sonores pour marquer la fin de l'execution.
+dbc 3;
+	sgo 45;
+	att 20;
+	sar;
+	att 20;
+fbc;
+fin;//Fin du programme

@@ -1,0 +1,40 @@
+École Polytechnique de Montréal
+
+Département de génie informatique et génie logiciel
+
+INF1995: Projet initial en ingénierie informatique 
+         et travail en équipe
+
+Grille de correction des programmes:
+
+Identification:
+  Travail Pratique # : Projet
+  Section #  : 2
+  Équipe #   : 0622
+  Correcteur : Gauthier Viau
+
+Lisibilité/Compréhension:  /5
+  En-têtes en début de programme et de fonctions  (1 point) : 1
+  Identificateurs significatifs                   (1 point) : 1
+  Commentaires aux endroits stratégiques          (1 point) : 1
+  Indentation et facilité de lecture              (1 point) : 1
+  Broches, ressources matérielles bien identif.   (1 point) : 1
+
+Modularité:   /5
+  Choix des structures de contrôle                (1 point) : 1
+  Choix de fonctions                              (2 points): 2
+  Paramètres de fonctions (mode de transmission)  (2 points): 2
+
+Fonctionnalité:   /10
+  Respect des requis                              (2 points): 1
+  Soumission réussie sous SVN (bon endroit, 
+                          sans fichiers inutiles) (2 points): 2
+  Compilation sans warnings et sans erreurs       (1 point) : 0.5
+  Fonctionnement correct                          (5 points): 5
+
+Total:   18.5/20
+
+Commentaires:
+
+Il n'y a pas de fichier "LISEZMOI.TXT".
+Il y avait des warnings à la compilation.
